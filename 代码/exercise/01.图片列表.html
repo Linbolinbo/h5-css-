@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture list</title>
+    <link rel="stylesheet" href="./css重置样式表/reset.css">
+    <style>
+        .im{
+            width: 200px;
+            height: 500px;
+            margin: auto;
+            background-color:red;
+        }
+         /* 设置边距最好从li下手 */
+         .im li{
+            margin-bottom: 9px;
+        }
+        /* 需要注意修改图片大小，否则会发生溢出现象 */
+        .im img{
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul class="im">
+        <li>
+            <a href="https://www.baidu.com">
+                <img src="./01图片/1.jpg" alt="picture1">
+            </a>
+            
+        </li>
+        <li>
+            <a href="https://www.baidu.com">
+                <img src="./01图片/2.jpg" alt="picture2">
+            </a>
+            
+        </li>
+        <li>
+            <a href="https://www.baidu.com">
+                <img src="./01图片/3.jpg" alt="picture3">
+            </a>
+            
+        </li>
+    </ul>
+</body>
+</html>

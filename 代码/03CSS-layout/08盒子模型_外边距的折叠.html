@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距的折叠</title>
+    <style>
+        /* 垂直外边距的折叠：
+            兄弟外边距的折叠：取较大值(两个都是正值)，取两者的和（一正一负），取较小值（两个都是负的）
+            父子外边距的折叠：子会传给父（需要解决）
+        */
+        .box1,.box2{
+            width: 200px;
+            height: 200px;
+            font-size: 100px;
+        }
+        .box1{
+            background-color: #bfa;
+            margin-bottom: 200px;
+        }
+        .box2{
+            background-color: #ffa;
+            margin-top: 100px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

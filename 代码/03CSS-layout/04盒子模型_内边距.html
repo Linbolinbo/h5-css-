@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        /* 内边距：内容和边框之间的距离
+                四个方向：padding-xxx
+                内边距设置影响盒子大小，背景颜色会延申到内边距上
+                可见框大小：内容区+内边距+边框
+                
+            简写属性：规则和border-width一样
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 20px orange solid;
+            padding-top: 200px;
+            padding-right: 200px;
+            padding-bottom: 200px;
+            padding-left: 200px;
+            padding: 200px 100px 200px;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+
+</body>
+</html>

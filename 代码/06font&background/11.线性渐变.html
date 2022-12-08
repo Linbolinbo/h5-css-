@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* 通过background-image实现渐变效果，
+            background-image: linear-gradient(颜色1 颜色占比,颜色2,...）；从上到下渐变，默认
+            background-image: linear-gradient(to right,颜色1,颜色2,...）；从左到右
+            开头指定渐变方向：
+            to left,to right,to top,to bottom
+            xxxdeg,表示向几度方向渐变
+
+            */
+            background-image: linear-gradient(0deg,red 50px,yellow 20%,blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器</title>
+    <style>
+        .red{
+            color: red;
+        }
+        /* 将div字体变为30px */
+        /* 交集选择器：
+            作用：选中复合多个条件的元素
+            语法：选择器1选择器2选择器n{},如果有元素选择器必须元素选择器开头   
+        */
+        div.red{
+            font-size: 30px;
+        }
+        .a.b{
+            color: aqua;
+        }
+        /* 选择器分组（并集选择器）：
+            作用：同时选择多个选择器对应的元素
+            语法：选择器1，选择器2，选择器n{}
+            例子：#b1,.a1,p,div.red{}
+        */
+        h1,span{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div元素</div>
+    <p class="red">我是p元素</p>
+    <p class="a b c d">我对div2</p>
+    <h1>标题</h1>
+    <span>文本部分</span>
+</body>
+</html>

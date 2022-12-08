@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直方向</title>
+    <style>
+        /* 子元素在父元素中排序的：
+                超过父元素则会溢出，用overflow属性来处理
+                可选值：
+                    visible默认值，子元素在父元素出溢出
+                    hidden,裁剪溢出部分
+                    sroll,溢出部分为滑轮滚动条，生成完整两个滚动条
+                    auto，根据需要生成滚动条
+                    overflow-x:单独处理水平方向
+                    overflow-y：单独处理垂直方向
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bcf;
+            overflow: auto;
+        }
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ad obcaecati officiis aliquid quasi tempora alias odio beatae adipisci, impedit quidem expedita in molestiae sed ex nihil dolorum nulla doloribus.
+        </div>
+    </div>
+</body>
+</html>

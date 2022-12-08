@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        /* 外边距，盒子和外边的距离
+                不会影响可见框大小，但会影响盒子位置和占用空间
+                一共有四个方向：
+                margin-top
+                margin-right(默认情况下不会产生任何效果)
+                margin-bottom
+                margin-left
+
+                简写属性：margin，用法和border-width一样
+        
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bcf;
+            margin-right: -200px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+            margin-left: -100px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

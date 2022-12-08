@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关系选择器</title>
+    <style>
+        /* 子元素选择器：
+                作用：选定父元素中子元素
+                语法：父元素>子元素{}
+        */
+        div>span{
+            color: blueviolet;
+        }
+        div>p>span{
+            color: blue;
+        }
+        /* 后代选择器:
+                作用：选中元素中所有后代元素
+                语法：祖先 后代
+        */
+        h1 p{
+            color: brown;
+        }
+        /* 选择下一个兄弟
+            语法：前一个+后一个
+        选择下面所有兄弟
+            语法：兄~弟
+        */
+        h2+h3{
+            font-size: 20px;
+        }
+        h2~h3{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是div元素
+        <p>
+            我是div中的p元素
+            <br>
+            <span>我是p元素中的span元素</span>
+        </p>
+        <span>我是div中的span元素</span>
+    </div>
+    <br><br><br>
+    <h1>
+        我是h1元素
+        <span>
+            我是h1中的span元素
+            <br>
+            <p>我是span元素中的p元素</p>
+        </span>
+        <p>我是h1中的p元素</p>
+    </h1>
+    <br><br><br>
+    <h2>我是h2元素
+        <h3>我是h2中的h3元素</h3>
+        <h3>我是h2中的h3元素</h3>
+        <h3>我是h2中的h3元素</h3>
+        <h3>我是h2中的h3元素</h3>
+        <h3>我是h2中的h3元素</h3>
+    </h2>
+
+</body>
+</html>

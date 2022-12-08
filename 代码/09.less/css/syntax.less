@@ -1,0 +1,40 @@
+// 嵌入式编程
+.box1{
+    background-color: #bfa;
+    .box2{
+        background-color: green;
+        .box3{
+            background-color: yellow;
+        }
+    }
+}
+// 单行注释，css文件看不到
+/*
+多行注释，css文件看得到
+*/
+
+// 变量，在变量中可以储存一个任意值，并且可以根据需要修改
+// 语法： @变量名
+@a:100px;
+@b:#bfa;
+// 类名也可以,不过使用时变量名得加{}
+@c:box5;
+.@{c}{
+    width: @a;
+    color: @b;
+    background-image: url("@{c}/1.png");
+}
+// 就近原则
+@d:200px;
+@d:300px;
+div{
+    @d:110px;
+    width: @d;
+    height: @e;
+}
+@e:335px;
+// 用$运用未声明变量
+.widget{
+    color: #efefef;
+    background-color: $color;
+}

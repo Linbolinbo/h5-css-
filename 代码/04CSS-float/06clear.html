@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            clear: left;
+            clear:right
+            /* clear
+                -作用：清除浮动元素对当前元素的影响
+                -可选值：
+                    left 清除左侧浮动元素对当前元素的影响
+                    right 清除右侧浮动元素对当前元素的影响
+                    both 清除两侧中影响较大的一侧
+                原理：自动添加一个上外边距，使其位置不受影响
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2"></div>
+    <div class="box3">3</div>
+</body>
+</html>

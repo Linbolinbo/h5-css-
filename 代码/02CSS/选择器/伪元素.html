@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        /* 伪元素：特殊不真实存在的元素
+            使用：::伪元素
+            ::first-letter表示第一个字母
+            ::first-line表示第一行
+            ::selection表示鼠标选中部分
+            ::before表示元素的最开头
+            ::after表示元素的最结尾
+            */
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::selection{
+            color: chartreuse;
+        }
+        p::before{
+            content:'hello';
+            color: blueviolet;
+        }
+        p::after{
+            content: 'bai';
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facere debitis reprehenderit fugit eveniet minima nemo nobis, tempore doloribus natus iste saepe odio veritatis incidunt perspiciatis, maxime ipsam unde. Pariatur.</p>
+</body>
+</html>

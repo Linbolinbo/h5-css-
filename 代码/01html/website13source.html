@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>音频文件</title>
+    </head>
+    <body>
+        <!--利用audio标签引入音频文件，controls属性控制是否给用户操作-->
+        <!--属性loop音乐是否循环播放-->
+        <audio src="./source/蔡健雅 - Letting Go.mp3" controls loop ></audio>
+        <!--下面利用source标签播放音频可以支持版本较低的浏览器,embed可以支持所有浏览器体验不好，放在最后-->
+        <audio controls>
+            <source src="./source/text.mp3"><!--优先选择，如果不支持,则依次选择下方标签-->
+            <source src="./source/This Side Of You.wav">
+            <embed src="./source/This Side Of You.wav" type="audio/wav" width="200" height="300"> 
+        </audio>
+        <!--利用video标签引入视频文件，用法和audio一样-->
+        <video src="./source/保护宣传PPT.mp4" controls loop width="400"></video>
+        <video controls width="400">
+            <source src="./source/保护宣传PPT.mp4">
+        </video>
+    </body>
+</html>

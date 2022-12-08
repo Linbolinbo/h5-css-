@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /* 固定定位：
+                    -将元素的position属性设置为fixed开启固定定位
+                    -固定定位大部分特点和绝对定位差不多，不同为固定定位
+                    永远参照浏览器视口进行定位（不会随着滚动条而移动）    
+            */
+            position: fixed;
+            left: 0;
+            top: 30px;
+        }
+        .box1{
+            width: 1px;
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

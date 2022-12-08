@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+    <style>
+        /* 出现样式冲突，需要设定权重（优先级）
+                选择器的权重:
+                    内联样式：1，0，0，0
+                    id选择器：0，1，0，0
+                    类和伪类选择器：0，0，1，0
+                    元素选择器：0，0，0，1
+                    通配选择器:0,0,0,0(比继承样式高)
+                    继承的样式:无优先级
+        
+        */
+        div{
+            color: chartreuse; 
+            font-size: 20px;
+        }
+        .d1{
+            color: aqua !important; 
+        }
+        .red{
+            color: red;
+        }
+        #box1{
+            color: blue;
+        }
+        div#box1{   /*需要将选择器优先级进行相加得到最终优先级*/
+            color:gold;
+        }
+        div,p,span{
+            font-size: 20px; /*分组选择器需要单独运算，不相加*/
+        }
+        /* 注意：选择器优先级的累加最大不会超过其数量级，即类选择器怎么累加都不会超过id选择器 */
+        /* 如果优先级相同，则优先选择靠下的选择器 */
+        *{
+            font-size: 50px;
+        }
+            /* 可以在样式后面加!important,使其变为最高优先级（开发中慎用） */
+    </style>
+</head>
+<body>
+    <div class="red d1" id="box1" style="background-color:yellow;">
+        我是div
+        <span>我是div中的span</span>
+    </div>
+    
+</body>
+</html>

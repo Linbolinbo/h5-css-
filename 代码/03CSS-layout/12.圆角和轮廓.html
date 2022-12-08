@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓和圆角</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            margin-left: 60px;
+            margin-top: 60px;
+            background-color: #bfa;
+            /* outline设置轮廓，用法和border一模一样，
+            与border不同的是其不会影响可见框的大小
+            */
+            outline: 10px red solid;
+            /* box-shadow用来设置阴影效果，不会影响页面布局：
+                    第一个值，水平偏移量，正值向右负值向左
+                    第二个值，垂直偏移量，正值向下负值向上
+                    第三个值，阴影的模糊半径
+                    第四个值，阴影颜色
+             */
+            box-shadow: 30px -30px 20px rgba(2, 6, 5, .5);
+            /*  */
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            /* border-radius（可以指定多个值，四个值顺序为顺时针，三个为右对角，两个为左右对角）
+            ，border-top-left-radius
+                border-bottom-right-radius，border-bottom-left-radius
+            设置圆角，一个值为圆的半径，两个值为椭圆的两个半径(两个半径相同则为圆) */
+            border-radius: 20px /60px;/*加斜杠指定椭圆两个半径*/
+            /* border-top-right-radius:60px ;
+            border-bottom-left-radius: 20px 60px; */
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /* border: 10px red solid; */
+            box-shadow: 30px 30px 20px rgba(2, 6, 5, .5);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+    <div class="box2"></div>
+    <div class="box3">圆形</div>
+</body>
+</html>

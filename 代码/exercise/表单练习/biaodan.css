@@ -1,0 +1,64 @@
+
+body{
+    font-size:10px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1200px;
+    height: 758px;
+    /* border: 1px solid silver; */
+}
+.topbar{
+    color: rgb(21, 142, 182);
+    font-size: 13px;
+    height: 26px;
+    line-height: 16px;
+    background-color: rgb(209, 209, 209);
+    border-bottom: 3px solid silver;
+}
+.box1{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.fot{
+    font-weight: bold;
+    line-height: 26px;
+    margin-left: 10px;
+}
+.tb{
+    border: 1px solid silver;
+    border-collapse: collapse;
+    width: 1200px;
+    height: 500px;
+
+}
+tr{
+    border: 1px solid silver;
+    /* height: 15px; */
+}
+td{
+    border: 1px solid silver;
+    
+
+}
+.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+    vertical-align: center;
+    text-align: right;
+    height: 15px;
+    margin-left: 20px;
+}
+.box10{
+    height: 50px;
+}
+.botton{
+    margin-top: 5px;
+    margin-left: 500px;
+}
+.but{
+    margin-right: 20px;
+}
+.box11{
+    height: 120px;
+    line-height: 120px;
+}
+

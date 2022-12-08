@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的其他特点</title>
+    <style>
+        /* 浮动不会盖住文字，文字回环绕在浮动周围，可以利用这点设置文字环绕图片效果 */
+        .box1{
+            width: 100px;height: 100px;
+            background-color: #bfa;
+            float: left;
+        }
+        .box2{
+            background-color: #bfa;
+            float: left;/*设置浮动后，元素一些性质也会改变*/
+        }
+        /* 脱离文档流后的特点：
+                块元素：
+                    1.块元素不在独占页面一行
+                    2.脱离文档流后，块元素的宽度和高度都会被内容撑开
+                行内元素：
+                    行内元素脱离文档流后特点同块元素,也就是元素脱离文档流后就不区分块元素
+                    和行内元素了
+        */
+        .s1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus saepe. Saepe ea itaque obcaecati. Tempore optio aperiam culpa tempora commodi, fugiat non rerum voluptatibus. Natus nulla fugiat praesentium itaque.
+    </p>
+    <br><br><br>
+    <div class="box2">hello</div>
+    <span class="s1">ggdg</span>
+</body>
+</html>

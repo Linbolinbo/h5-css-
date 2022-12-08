@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./04target.html">
+        <!-- autocomplete自动补全，on打开，off关闭
+             readonly将表单设置为只读，数据会提交
+             disabled将表单设置为禁用，数据不会提交
+             autofocus设置表单自动获取焦点
+        -->
+        <input type="text" name="nsername" autocomplete="off" autofocus>
+        <br><br>
+        <input type="text" name="a" value="只读" readonly>
+        <br><br>
+        <input type="text" name="b" value="禁用" disabled>
+        <br><br>
+        <input type="submit">
+        <!-- 普通按钮button -->
+        <input type="button" value="按钮">
+        <!-- 重置按钮 -->
+        <input type="reset">
+        <br>
+        <!-- email属性,提交时会提示为邮箱格式 -->
+        email<input type="email">
+        <br><br>
+        <!-- button标签，专门指定按钮的标签 -->
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">按钮</button>
+    </form>
+</body>
+
+</html>

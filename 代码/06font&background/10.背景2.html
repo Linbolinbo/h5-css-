@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            background-image: url(../exercise/01图片/7.png);
+            background-repeat: no-repeat;
+            /* background-clip设置背景范围
+                    可选值：
+                        border-box 默认值，背景会出现在边框下边
+                        padding-box 背景不会出现在边框，只在内容区和内边距
+                        concent-box 背景只会出现在内容区
+            */
+            padding-left: 20px;
+            border: 10px red double;
+            background-clip: content-box;
+            /* background-origin 背景图片的偏移量计算的原点
+                            padding-box 默认值，从内边距开始计算
+                            content-box 从内容区开始计算
+                            border-box 从边框处开始计算
+            */
+            background-position: 0 0;
+            background-origin: border-box;
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            background-repeat: no-repeat;
+            background-image: url(../exercise/01图片/3.jpg);
+            /*background-size设置元素大小，宽和高
+                如果只写一个值(默认为宽)，另一个默认为auto
+                cover 图片比例不变，将元素铺满
+                contain 图片比例不变，将图片完整显示出来
+            */
+            background-size:  auto 100%;
+            /* background-attachment设置背景图片是否跟随元素移动
+                可选值：
+                    scroll 默认值 背景图片会跟随元素移动
+                    fixed 不会随元素移动
+
+            */
+            background-attachment: scroll;
+            
+        }
+        .box3{
+            padding: 50px;
+            border: 10px red double;
+            width: 500px;
+            height: 500px;
+            /* background简写属性
+                    无顺序要求，无必须写的属性，
+                    但是background-size必须写在background-position后边，用/隔开
+                       background-origin background-clip两个样式，orgin要在clip前边
+            */
+            background: #bfa url(../exercise/01图片/1.jpg) center center/contain border-box content-box no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平方向布局</title>
+    <style>
+        .outer{
+            /* width: 800px; */
+            height: 200px;
+            border:10px orangered solid;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: #bcf;
+            margin-left: 100px;
+        }
+        /* 元素在其父元素水平位置方向由以下属性共同决定：
+            margin-left,border-left,padding-left,,width,padding-right,
+            border-right,margin-right他们相加必须等于父元素内容宽度，如果
+            没满足，为过度约束，没有auto情况（width（默认值为auto）,margin-left,margin-right
+            可以设置为auto为自动调整）会自动调整margin-right来满足
+            auto:一个外边距和宽度设置为auto,宽度最大
+                三个值都是auto,外边距为0，宽度最大
+                外边距两个为auto，两个外边距值一样，在父元素中水平居中
+                    例如：width:xxxpx
+                         margin:0 auto;
+        */
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素单位</title>
+    <style>
+        .box1{
+            /* 长度单位：像素
+            百分比：占父元素的多少
+            em:相对字体大小而改变的，1em=1font-size(默认为20px)
+            rem:相对根元素大小而改变的（默认为20px）
+            */
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: black;
+        }
+        .box3{
+            font-size: 16px;
+            width: 10em;
+            height: 10em;
+            background-color: blue;
+        }
+        html{
+            font-size: 20px;
+        }
+        .box4{
+            width: 10rem;
+            height: 10rem;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+            <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

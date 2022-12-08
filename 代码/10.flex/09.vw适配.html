@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 48px*98px,48/7.5=6.4vw,98/7.5= 13vw*/
+            height: 6.4vw;
+            width: 13vw;
+            background-color: aqua;
+        }
+        html{
+            /* 0.1333333vw=1px,5.3333vw=40px */
+            font-size: 5.33333vw;
+        }
+        .box2{
+            /* 1 rem = 1 html 字体大小
+                1 rem =40 px            
+            */
+            /* 750*35,750/40=18.75rem,35/40=0.875rem */
+            width: 18.75rem;
+            height: 0.875rem;
+            background-color: #bfa;
+        }
+    </style>
+</head>
+<body>
+    <!-- 视口大小为750px -->
+    <!-- 100vw=750px,1vw=7.5px,1px=0.13333vw -->
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

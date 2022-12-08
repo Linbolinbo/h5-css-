@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            display: block;
+            width: 374px;
+            height: 87px;
+            background-image: url(./01图片/8按钮图片.png);
+        }
+        a:hover{
+            /* 将多个图片统一保存到一张中去，再利用 background-position移动，
+                提高图片加载速度，这种技术为CSS-Sprite,这种图称为雪碧图
+
+                雪碧图使用步骤：
+                    1.先确定要使用的图标
+                    2.测量图标的大小
+                    3.根据测量结果创建一个元素 
+                    4.将雪碧图设为元素背景
+                    5.设置一个偏移量以显示正确图片
+            */
+            background-position: 0 87px;
+        }
+        a:active{
+            background-position: 0 174px;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+</body>
+</html>

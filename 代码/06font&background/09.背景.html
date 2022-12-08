@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            /* background-image设置背景图片
+                设置图片为背景，如果图片小于元素大小，图片会平铺
+                                如果图片大于元素大小，图片部分不显示
+                                一样大，图片正常显示
+                bcgground-color设置背景颜色
+            */
+            background-color: #bfa;
+            background-image: url(../exercise/01图片/7.png);
+            /* background-repeat设置背景重复方式，即平铺方向
+                    可选值：
+                        repeat 默认值
+                        repeat-x 向x轴平铺
+                        repeat-y 向y轴平铺
+                        no-repeat 不平铺
+            */
+            /* background-repeat: repeat-x; */
+            background-repeat: no-repeat;
+            /* background-position设置图片位置
+                    设置方式：
+                        通过top center bottom left right几个方位调整
+                        使用方位调整时必须同时使用两个，如只指定一个，另一个默认为center
+
+                        通过偏移量设置，水平和垂直
+            */
+            background-position: 20px 60px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

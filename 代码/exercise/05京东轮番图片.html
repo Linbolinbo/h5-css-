@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css重置样式表/reset.css">
+    <style>
+        /* 设置图片容器 */
+        .img-list{
+            width: 200px;
+            height: 250px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 4px;
+            background-color:rgba(255, 255, 255, .6);
+            background-clip: content-box;/* 将背景颜色设置到内容区 */
+            border: 2px solid transparent;
+        }
+        .pointer{
+            position: absolute;
+            z-index: 1;
+            bottom: 20px;
+        }
+        .pointer a.active,.pointer a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .6);
+        }
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="javascript:;"><img src="./01图片/4.jpg" alt=""></a></li>
+        <li><a href="javascript:;"><img src="./01图片/5.jpg" alt=""></a></li>
+        <li><a href="javascript:;"><img src="./01图片/6.jpg" alt=""></a></li>
+        <div class="pointer">
+        <a class="active" href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>

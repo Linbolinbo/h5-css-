@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-color: #bfa;
+            position: absolute;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 水平布局
+                    left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right = 包含块水平宽度
+                -当我们开启了绝对定位后：
+                    水平方向的布局等式添加left和right两个值
+                    规则同之前，只是多了两个值
+                    -可设置auto的值
+                        margin width left right
+                    left和right默认为auto，不指定值则自动调整
+                垂直方向等式也要满足
+                    top + margin-top/bottom + padding-top/bottom + border-top/bottom + height = 包含块垂直高度
+            */
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

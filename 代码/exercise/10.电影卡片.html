@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css重置样式表/reset.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <style>
+        .outer{
+            width: 354px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0 , 0, .3);
+        }
+        .img-wrapper img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+        .info{
+            padding: 0 20px;
+        }
+        .info .title{
+            font: 18px  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #717171;
+            margin: 13px 0 15px 0;
+        }
+        .info .category{
+            color: #acaaaa;
+            font-size: 14px;
+        }
+        .info .category i{
+            margin-left: 4px;
+            margin-right: 7px;
+        }
+        .info .intro{
+            color: #acaaaa;
+            font-size: 14px;
+            margin-left: 4px;
+            margin-top: 16px;
+            line-height: 20px;
+            margin-bottom: 18px;
+        }
+        .star-wrapper{
+            height: 46px;
+            line-height: 46px;
+            border-top: 1px solid #e9e9e9;
+            color: #ddd;
+            padding: 0 16px;
+        }
+        .star-wrapper .star{
+            float: left;
+        }
+        .star-wrapper .weibo{
+            float: right;
+        }
+        .star-wrapper  .light{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="img-wrapper">
+            <img src="./01图片/9pic.png" alt="">
+        </div>
+        <div class="info">
+            <h2 class="title">动画电影</h2>
+            <h2 class="category">
+                <i class="fas">&#xf3c5;</i>
+                动画</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="star-wrapper">
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <ul class="weibo">
+                <i class="fab fa-weibo"></i>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

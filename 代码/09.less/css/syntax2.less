@@ -1,0 +1,71 @@
+.box1{
+    // 后代
+    .box2{
+        color: red;
+    }
+    // 子元素加上>
+    >.box3{
+        color: red;
+        div &{
+            font-size: 1px;
+        }
+    }
+    // 为box1设置一个hover
+    // &表示外层的父元素
+    &:hover{
+        color: orange;
+    }
+}
+// 两个元素有相同特性，也有不同的，可以使用extend扩展
+.p1{
+    width: 100px;
+    height: 100px;
+}
+.p2:extend(.p1){
+    color: red;
+}
+// mixin混合，直接进行样式引用
+.p3{
+    
+    .p1();
+}
+// 在类选择器加个括号，创建一个mixins（混合函数）,它自身不会出现，引用时其样式出现
+.p4(){
+    width: 100px;
+    height: 200px;
+}
+.p5{
+    .p4;
+}
+// 混合函数，在混合函数中可以直接使用变量，使用时再赋值,按顺序赋值传参数
+// 可以先指定默认值如@x,则它可以不传值
+.text(@w:500px,@h,@bg-color){
+    width: @w;
+    height: @h;
+    border: 1px solid @bg-color;
+}
+div{
+    .text(200px,300px,#bfa);
+    // .text(@w:200px,@bg-color:#bfa,@h:300px);不按顺序则得再前面指定变量
+
+}
+
+span{
+    //average颜色取平均值 
+    color: average(red,orange);
+}
+html{
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    
+     width: 100%;
+    height: 100%;
+    background-color: #bfa;
+}
+body:hover{
+    // darken加深颜色
+    background-color: darken(#bfa,50%);
+}

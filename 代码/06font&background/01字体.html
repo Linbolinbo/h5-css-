@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* 
+            字体相关样式
+                color 用来设置字体颜色
+                
+                font-size 字体大小
+                    和font-size相关单位（em,rem）
+                
+                font-family 字体族（字体格式）
+                    可选值（指定字体类别）：
+                        serif 衬线字体
+                        sans-serif 非衬线字体
+                        monospace 等宽字体
+                    可以同时指定多个值，浏览器从左到右依次优先使用
+            */
+            color: brown;
+            font-size: 40px;
+            font-family:'Courier New', Courier, monospace;
+        }
+        /* 用font-face可以将服务器中的字体直接提供给用户使用 */
+        @font-face{
+            /* 指定字体名字 */
+            font-family: 'myfont';
+            /* 服务器中字体的路径 */
+            src: url('./font/VIVALDII.TTF');
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气不错</p>
+</body>
+</html>

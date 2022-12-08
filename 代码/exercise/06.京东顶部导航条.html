@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css重置样式表/reset.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <style>
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        body{
+            font:12px/1.5 'Courier New', Courier, monospace;
+            margin-top: 65px;
+        }
+        .top-bar-wrapper{
+            background-color: #E3E4E5;
+            height: 32px;
+            line-height: 30px;
+            border-bottom: 1px solid #DDDDDD;
+        }
+        .top-bar{
+            width: 1190px;
+            margin: 0 auto;
+        }
+        .location{
+            float: left;
+        }
+        .location .city-list{
+            display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgba(204, 204, 204, .5);
+            border-top: none;
+            position: absolute;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            margin-left: -1px;
+        }
+        .location:hover  .city-list{
+            display: block;
+        }
+        .center-city{
+            padding: 0 10px;
+            border: 1px solid transparent;
+            z-index: 9999;
+        }
+        .location:hover{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            margin-left: -1px;
+            margin-top: -1px;
+            
+        }
+        .shortcut{
+            float: right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        .top-bar a,
+        .top-bar span,
+        .top-bar i{
+            color: #999;
+            text-decoration: none;
+        }
+        .location .fas{
+            color: #f10215;
+        }
+        .top-bar a:hover,
+        .top-bar span:hover
+        {
+            color: #f10215;
+        }
+        .shortcut .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+            <div class="location">
+                <div class="center-city">
+                    <i class="fas">&#xf3c5;</i>
+                    <a href="javascript:;">北京</a>
+                    
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <ul class="shortcut">
+                <li>
+                    <a href="javascript:;">你好，请登陆</a>
+                    <a style="color:#f13502 ;" href="javascript:;">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>我的京东</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span style="color:#f13502 ;">企业采购</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">手机京东</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

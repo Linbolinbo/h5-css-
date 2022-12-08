@@ -1,0 +1,25 @@
+.box1 {
+  background-color: #bfa;
+}
+.box1 .box2 {
+  background-color: green;
+}
+.box1 .box2 .box3 {
+  background-color: yellow;
+}
+/*
+多行注释，css文件看得到
+*/
+.box5 {
+  width: 100px;
+  color: #bfa;
+  background-image: url("box5/1.png");
+}
+div {
+  width: 110px;
+  height: 335px;
+}
+.widget {
+  color: #efefef;
+  background-color: #efefef;
+}

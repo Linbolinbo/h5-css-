@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* radial-gradient(颜色1，颜色2，...)实现径向渐变的效果（中心向四周渐变）*/
+            /* 最前面可以指定渐变范围 xxxpx xxxpx,at xxpx xxpx表示在什么位置*/
+            /* 
+            语法：
+                radial-gradient（大小 at 位置，颜色 位置，...）
+                大小：
+                    circle 圆形
+                    ellipse 椭圆
+                    closest-side 近边
+                    closest-corner 近角
+                    farthest-side 远边
+                    farthest-corner 远角
+
+            */
+            background-image: radial-gradient(100px 50px at 50px 0, red,yellow,blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

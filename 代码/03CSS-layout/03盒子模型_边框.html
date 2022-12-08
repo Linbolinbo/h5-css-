@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+</head>
+<style>
+    /* 盒子边框：边框内部是内容区，边框外部是盒子外面，边框会影响盒子大小
+        border-width:默认值为3px;
+        可以用四个方向指定边框宽度：
+            四个值：上 右 下 左
+            三个值：上 左右 下
+            两个值：上下 左右
+            一个值：上下左右
+        也可以用border-xxx-width:
+        xxx可以是：top right bottom left
+
+        border-color:
+            默认颜色为黑色(和文本一个颜色)
+            规则和border-width一样
+
+        border-style:
+            solid:实线
+            dotted:点状虚线
+            dashed:虚线
+            double:双线
+        
+    */
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        border-width: 10px 20px 30px 40px;
+        border-color: tomato green yellow;
+        border-style: dashed;
+        border-top-width: 30px;
+
+    }
+    .box2{
+        /* border简写属性，没有顺序要求,border-xxx表示方位
+        */
+        width: 100px;
+        height: 100px;
+        background-color: #bcf;
+        border: 20px orange double;
+        border-top: 30px solid #000;
+        /* 去除某个边框 */
+        border-right: none;
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接的伪类</title>
+    <style>
+        /* a:link表示正常的链接 ，即所有链接*/
+        a:link{
+            color: chartreuse;
+        }
+        /* a:visited表示访问过的链接，只能改颜色 */
+        a:visited{
+            color: black;
+        }
+        /* :hover表示鼠标移入状态，非超链接专属伪类 */
+        a:hover{
+            color: aqua;
+            font-size: 50px;
+        }
+        /* :active表示鼠标点击瞬间变化 */
+        a:active{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+        <a href="https://www.baidu.com">访问过的链接</a>
+        <a href="https://www.baidu133.com">无访问过的链接</a>
+</body>
+</html>
